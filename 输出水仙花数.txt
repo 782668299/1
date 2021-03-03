@@ -1,0 +1,13 @@
+#include<stdio.h>              //输出水仙花数
+void main()
+{
+	int x,g,s,b;
+	for(x=100;x<=999;x++)
+	{
+		g=x%10;
+		s=x/10%10;
+		b=x/100;
+		if(x==g*g*g+s*s*s+b*b*b)
+			printf("%d\n",x);
+	}
+}
